@@ -158,8 +158,7 @@ def load_raw_data(
 
     # for month in months:
 
-    local_file = RAW_DATA_DIR / \
-        f'rides_{year}.parquet'  # -{month:02d}.parquet'
+    local_file = RAW_DATA_DIR / f'rides_{year}.parquet'  # -{month:02d}.parquet'
     if not local_file.exists():
         try:
             # download the file from the BsAs website
